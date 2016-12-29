@@ -1,4 +1,4 @@
-#Filename: calc_table.py
+#Filename: priorTablePlus.py
 
 class Table:
     #each G string depart by '<-->'

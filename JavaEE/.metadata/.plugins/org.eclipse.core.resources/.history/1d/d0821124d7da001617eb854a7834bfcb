@@ -1,0 +1,15 @@
+package com.amaker.util;
+
+import java.sql.Connection;
+
+public class DBUtil {
+	public Connection getConnection(){
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+}

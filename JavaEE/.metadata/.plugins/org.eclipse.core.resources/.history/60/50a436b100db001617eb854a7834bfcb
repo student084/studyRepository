@@ -12,12 +12,12 @@ public class DBUtil {
 	public static void main(String[] args){
 		DBUtil util = new DBUtil();
 		//Connection conn= util.getConnection();
-		//Connection conn = util.openConnection();
+		Connection conn = util.openConnection();
 		util.add();
 		util.add("usertable", 4, "harry", "port");
 		util.showData("usertable");
-		//util.closeConnection(conn);
-		//System.out.println(conn);
+		util.closeConnection(conn);
+		System.out.println(conn);
 	}
 	public Connection getConnection(){
 		try {
@@ -86,7 +86,7 @@ public class DBUtil {
 		Connection conn = util.openConnection();
 		try {
 			Statement stmt = conn.createStatement();
-			String sql = "insert into usertable(id, username, password) value(3, 'rose', '33333') ;";
+			String sql = "insert into usertable(id, username, password) value(3, 'rose', '33333')";
 			stmt.executeUpdate(sql);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -101,12 +101,8 @@ public class DBUtil {
 		Connection conn = util.openConnection();
 		try {
 			Statement stmt = conn.createStatement();
-			String sql = "insert into " + tableName + "(id, username, password) value ( "+ id + ",'"+ username + "','" + password + "') ;";
-			try{
-				stmt.executeUpdate(sql);
-				}catch(Exception e){
-					e.printStackTrace();
-				}
+			String sql = "insert into " + tableName + "(id, username, password) value ( "+ id + ","+ username + "," + password + ");";
+			stmt.executeUpdate(sql);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -128,8 +124,7 @@ public class DBUtil {
 		Connection conn = util.openConnection();
 		try {
 			Statement stmt = conn.createStatement();
-			String sql = "select* from " + tableName;
-			System.out.println(sql);
+			String sql = "search * from " + tableName + ";";
 			ResultSet rs = stmt.executeQuery(sql);
 			while(rs.next()){
 				int id = rs.getInt("id");

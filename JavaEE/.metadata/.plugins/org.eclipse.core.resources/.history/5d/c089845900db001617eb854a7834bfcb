@@ -3,21 +3,16 @@ package com.amaker.util;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Properties;
 
 public class DBUtil {
 	public static void main(String[] args){
 		DBUtil util = new DBUtil();
 		//Connection conn= util.getConnection();
-		//Connection conn = util.openConnection();
-		util.add();
-		util.add("usertable", 4, "harry", "port");
-		util.showData("usertable");
-		//util.closeConnection(conn);
-		//System.out.println(conn);
+		Connection conn = util.openConnection();
+		util.closeConnection(conn);
+		System.out.println(conn);
 	}
 	public Connection getConnection(){
 		try {
@@ -81,38 +76,6 @@ public class DBUtil {
 		}
 		return null;
 	}
-	public void add(){
-		DBUtil util = new DBUtil();
-		Connection conn = util.openConnection();
-		try {
-			Statement stmt = conn.createStatement();
-			String sql = "insert into usertable(id, username, password) value(3, 'rose', '33333') ;";
-			stmt.executeUpdate(sql);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			util.closeConnection(conn);
-		}
-	}
-	//super add(tableName, id, userName, password)
-	public void add(String tableName, int id, String username, String password){
-		DBUtil util = new DBUtil();
-		Connection conn = util.openConnection();
-		try {
-			Statement stmt = conn.createStatement();
-			String sql = "insert into " + tableName + "(id, username, password) value ( "+ id + ",'"+ username + "','" + password + "') ;";
-			try{
-				stmt.executeUpdate(sql);
-				}catch(Exception e){
-					e.printStackTrace();
-				}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
 	public void closeConnection(Connection conn){
 		if(conn != null){
 			try {
@@ -121,25 +84,6 @@ public class DBUtil {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
-	}
-	public void showData(String tableName){
-		DBUtil util = new DBUtil();
-		Connection conn = util.openConnection();
-		try {
-			Statement stmt = conn.createStatement();
-			String sql = "select* from " + tableName;
-			System.out.println(sql);
-			ResultSet rs = stmt.executeQuery(sql);
-			while(rs.next()){
-				int id = rs.getInt("id");
-				String username = rs.getString("username");
-				String password = rs.getString("password");
-				System.out.println(id + ":" + username + ":" + password);
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 	}
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JDBC_Intro"
+  id="myeclipse.1484446067031"
+  context-root="/JDBC_Intro"
+  j2ee-spec="5.0"
+  archive="JDBC_Intro.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

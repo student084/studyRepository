@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+D:\Student0_file\geekfile\studyRepository\JavaEE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3982383345.index
+\JDBC_Intro\src

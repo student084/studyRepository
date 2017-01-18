@@ -106,6 +106,7 @@ public class DBUtil {
 				stmt.executeUpdate(sql);
 				}catch(Exception e){
 					e.printStackTrace();
+					conn.rollback();
 				}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -140,6 +141,8 @@ public class DBUtil {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally{
+			util.closeConnection(conn);
 		}
 	}
 }

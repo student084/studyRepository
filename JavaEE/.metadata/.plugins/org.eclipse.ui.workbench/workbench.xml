@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="14" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="1024" x="78" y="0">
+<window height="728" maximized="true" width="1024" x="-1530" y="181">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="266" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="124" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.genuitec.eclipse.j2eedt.core.ejb" itemType="typeToolBarContribution" x="55" y="22"/>
 <coolItem id="com.genuitec.eclipse.uml.actions" itemType="typeToolBarContribution" x="61" y="22"/>
@@ -21,11 +21,14 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="175" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="78" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="101" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -34,10 +37,20 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DBUtil.java" partName="DBUtil.java" path="D:/Student0_file/geekfile/studyRepository/JavaEE/JDBC_Connection/src/com/amaker/util/DBUtil.java" title="DBUtil.java" tooltip="JDBC_Connection/src/com/amaker/util/DBUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JDBC_Connection/src/com/amaker/util/DBUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3344" selectionTopPixel="1351"/>
+</editor>
+<editor id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="DBConfig.properties" partName="DBConfig.properties" path="D:/Student0_file/geekfile/studyRepository/JavaEE/JDBC_Connection/src/DBConfig.properties" title="DBConfig.properties" tooltip="D:/Student0_file/geekfile/studyRepository/JavaEE/JDBC_Connection/src/DBConfig.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/JDBC_Connection/src/DBConfig.properties"/>
+</editor>
 </editors>
 <views>
 <view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser"/>
@@ -52,6 +65,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (3 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -60,7 +76,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
@@ -96,7 +114,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
@@ -216,7 +234,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="200" ratioRight="800" relationship="2" relative="cvslocation"/>
+<info part="org.eclipse.ui.editorss" ratio="0.2782288" ratioLeft="377" ratioRight="978" relationship="2" relative="cvslocation"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@534313ff" ratio="0.75" ratioLeft="600" ratioRight="200" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -233,8 +251,8 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.7491749" ratioLeft="454" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.7258065" ratioLeft="675" ratioRight="255" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.genuitec.eclipse.ui.HTMLView" label="Web Browser"/>
@@ -277,7 +295,157 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JDBC_Connection/src/com/amaker/util/DBUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JDBC_Intro/src/com/amaker/test/Test.java"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" path="/JDBC_Connection/src/DBConfig.properties"/>
+</editors>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="2661" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="2692" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="2966" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="2831" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="2997" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3128" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3178" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3227" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3189" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3351" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="459" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="479" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3708" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3739" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3871" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="4177" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="4171" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="583" y="186"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="4171" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="513" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3664" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3916" y="41"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="2661" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3916" y="41"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3829" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="438" y="44"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3178" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="484" y="29"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="2660" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="484" y="29"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3916" y="41"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="552" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3945" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="583" y="186"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3945" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3741" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3957" y="0"/>
+</item>
+<item historyLabel="DBConfig.properties" index="2"/>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3957" y="0"/>
+</item>
+<item historyLabel="DBConfig.properties" index="2"/>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3957" y="0"/>
+</item>
+<item historyLabel="DBConfig.properties" index="2"/>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3957" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3864" y="0"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3231" y="44"/>
+</item>
+<item historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="3292" y="0"/>
+</item>
+<item active="true" historyLabel="DBUtil.java" index="0">
+<position info="not_deleted" x="4316" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -293,5 +461,21 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="DBConfig.properties" tooltip="JDBC_Connection/src/DBConfig.properties">
+<persistable path="/JDBC_Connection/src/DBConfig.properties"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="JDBC_Intro/src/com/amaker/test/Test.java">
+<persistable path="/JDBC_Intro/src/com/amaker/test/Test.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DBUtil.java" tooltip="JDBC_Intro/src/com/amaker/util/DBUtil.java">
+<persistable path="/JDBC_Intro/src/com/amaker/util/DBUtil.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DBUtil.java" tooltip="JDBC_Connection/src/com/amaker/util/DBUtil.java">
+<persistable path="/JDBC_Connection/src/com/amaker/util/DBUtil.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tester.java" tooltip="JDBC_Intro/src/com/amaker/util/Tester.java">
+<persistable path="/JDBC_Intro/src/com/amaker/util/Tester.java"/>
+</file>
+</mruList>
 </workbench>

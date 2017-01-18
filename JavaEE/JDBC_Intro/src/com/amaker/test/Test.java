@@ -1,6 +1,7 @@
 package com.amaker.test;
 
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,6 +19,15 @@ public class Test {
 		//Connect the dataBase
 		DBUtil util = new DBUtil();
 		Connection conn = util.getConnection();
+		try {
+			DatabaseMetaData dbmd = conn.getMetaData();
+			String dbName = dbmd.getDatabaseProductName();
+			String dbVersion = dbmd.getDriverVersion();
+			System.out.println("the database name is :" + dbName + ", it's version is : " + dbVersion);
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		String sql = "select * from usertable";
 		try {
 			Statement stmt = conn.createStatement();

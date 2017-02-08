@@ -12,7 +12,7 @@ public class PrepatedstatementTest {
 		getPreparedStatement(3);
 	}
 	
-	public static void getPreparedStatement(int id){
+	static void getPreparedStatement(int id){
 		DBUtil util = new DBUtil();
 		Connection conn = util.getConnection();
 		String sql = "select * from usertable where id = ?";

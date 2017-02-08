@@ -10,8 +10,26 @@ import com.amaker.util.DBUtil;
 public class CallableStatementTest {
 	public static void main(String[] args){
 		testCallableStatement();
+		textCallaleStatement2();
 	}
-	
+	static void textCallaleStatement2() {
+		// TODO Auto-generated method stub
+		DBUtil util = new DBUtil();
+		Connection conn = util.getConnection();
+		try {
+			CallableStatement cst = conn.prepareCall("{call insert_user(?, ?, ?)}");
+			cst.setString(1, "21");
+			cst.setString(2, "student0");
+			cst.setString(3, "nopasswd");
+			cst.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	//调用有参数的存储过程
+	//调用存储过程(无参的存储过程)
 	static void testCallableStatement(){
 		DBUtil util = new DBUtil();
 		Connection conn = util.getConnection();
